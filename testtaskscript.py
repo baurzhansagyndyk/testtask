@@ -9,38 +9,6 @@ import pandas as pd
 import sys
 import tkinter.filedialog as tkfd
 
-# d_ext_desc = {'csv':'CSV file',
-#               'db':'Thumbnail',
-#               'doc':'Microsoft Word Document',
-#               'docx':'Microsoft Word Document',
-#               'GIF':'GIF Image file',
-#               'html':'HTML file',
-#               'ico':'Icon Image file',
-#               'jpg':'JPG Image file',
-#               'JPEG':'JPEG Image file',
-#               'json':'JSON file',
-#               'lnk':'Shortcut file',
-#               'msg':'Microsoft Outlook Message file',
-#               'pdf':'PDF file',
-#               'pkl':'Pickle (python) file',
-#               'png':'PNG Image file',
-#               'ppt':'Microsoft Powerpoint file',
-#               'pptx':'Microsoft Powerpoint file',
-#               'pst':'Microsoft Outlook Data file',
-#               'py':'Python file',
-#               'pyc':'Python file (compiled)',
-#               'rtf':'Rich Text Format',
-#               'svg':'SVG Image file',
-#               'txt':'Text document',
-#               'url':'Hyperlink',
-#               'vsd':'Microsoft Visio file',
-#               'xls':'Microsoft Excel file',
-#               'xlsb':'Microsoft Excel file',
-#               'xlsm':'Microsoft Excel (Macro-enabled) file',
-#               'xlsx':'Microsoft Excel file',
-#               'yml':'Requirements file (python)',
-#               'zip':'ZIP file'}
-
 def ext_desc(ext):
     try:
         desc = ext
@@ -75,10 +43,6 @@ def generate_index(path=None, max=500):
 if __name__ == '__main__':
     df = generate_index(max=0)
     df.to_excel('result.xlsx')
-
-
-# In[ ]:
-
 
 
 
